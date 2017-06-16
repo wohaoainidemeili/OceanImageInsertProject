@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/DownloadService/FtpDownFileload/FTPDownload.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/DownloadService/HttpDownFileload/HttpDownload.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Entity/ObservedProperty.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Entity/SOSWrapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Entity/Sensor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/SensorConfigInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/SensorConfigReader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Util/Decode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Util/Encode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/yuan/ocean/Util/HttpRequestAndPost.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ModisProperty.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ModisSensorID.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/config.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/observationdownloadconfig.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/observationdownloadconfig.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/observationdownloadconfig2.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/property.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/property.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/sensorID.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/sensorID.csv" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>OceanImageInsertProject</groupId>
+    <artifactId>OceanImageInsertProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <n52.common.xml.version>1.1.2</n52.common.xml.version>
+        <hibernate.version>4.3.11.Final</hibernate.version>
+    </properties>
+    <repositories>
+        <repository>
+            <id>Apache</id>
+            <name>Apache repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>n52-releases</id>
+            <name>52n Releases</name>
+            <url>http://52north.org/maven/repo/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>n52-snapshots</id>
+            <name>52n Snapshots</name>
+            <url>http://52north.org/maven/repo/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+        <!--log info-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <!--SOS decode and encode jar-->
+        <!--XMLBeans-->
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+        <!-- 52N COMMON XML -->
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-gml-v321</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-filter-v20</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sweCommon-v20</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sweCommon-v101</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sensorML-v101</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-om-v20</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sampling-v20</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-ows-v110</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sos-v20</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sos-v100</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-gml-v311</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-om-v100</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.n52.sensorweb</groupId>
+            <artifactId>52n-xml-sampling-v100</artifactId>
+            <version>${n52.common.xml.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+        <!--add jdbc of pgsql-->
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901.jdbc4</version>
+        </dependency>
+        <!--get the hibernate-core jar for spring-orm due to the dependency-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml/classmate -->
+        <dependency>
+            <groupId>com.fasterxml</groupId>
+            <artifactId>classmate</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

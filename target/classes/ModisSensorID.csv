@@ -1,0 +1,2 @@
+urn:liesmars:remotesensor:Ocean-Aqua-MODIS,.*\/MOLA\/.*,AuqaModis.txt
+urn:liesmars:remotesensor:Ocean-Terra-MODIS,.*\/MOLT\/.*,TerraModis.txt
